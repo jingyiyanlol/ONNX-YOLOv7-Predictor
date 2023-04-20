@@ -69,7 +69,7 @@ def xywh2xyxy(x):
     return y
 
 
-def draw_detections(image, boxes, scores, class_ids, mask_alpha=0.3):
+def draw_detections(image, boxes, scores, class_ids, class_names=class_names, mask_alpha=0.3):
     mask_img = image.copy()
     det_img = image.copy()
 
